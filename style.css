@@ -1,0 +1,501 @@
+:root{
+    --bodycentro:#ffffff;
+    --headermedio:#ffffff;
+    --headercarrito:#1D4ED8;
+    --mediocategorias:#1D4ED8;
+    --botoncategoria:#2378c7;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Barlow',sans-serif;
+    background:var(--bodycentro);
+    color:#ffffff;
+    font-size:14px;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+header{
+    background:var(--headermedio);
+    padding:10px 0;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 2px 8px rgba(0,0,0,.07);
+}
+
+.header-inner{
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 10px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo{
+    min-width:100px;
+}
+
+.logo img{
+    width:100px;
+    height:100px;
+    display:block;
+}
+
+.search-bar{
+    flex:1;
+    display:flex;
+    border:2px solid var(--headercarrito);
+    border-radius:4px;
+    overflow:hidden;
+    max-width:680px;
+}
+
+.search-bar select{
+    border:none;
+    border-right:2px solid var(--headercarrito);
+    padding:0 12px;
+    font-size:13px;
+    outline:none;
+    cursor:pointer;
+}
+
+.search-bar input{
+    flex:1;
+    border:none;
+    padding:10px 14px;
+    font-size:14px;
+    outline:none;
+}
+
+.search-bar button{
+    border:none;
+    background:var(--headercarrito);
+    color:rgb(255, 255, 255);
+    padding:0 18px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-left:auto;
+}
+
+.action-btn{
+    background:var(--headercarrito);
+    color:white;
+    padding:8px 16px;
+    border-radius:4px;
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.action2-btn{
+    background:var(--headercarrito);
+    color:white;
+    padding:8px 16px;
+    border-radius:4px;
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+
+}
+
+.action3-btn{
+    background:var(--headercarrito);
+    color:white;
+    padding:8px 16px;
+    border-radius:4px;
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+
+}
+
+.cart-btn{
+    background:var(--headercarrito);
+    color:white;
+    padding:8px 16px;
+    border-radius:4px;
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+nav{
+    background:var(--mediocategorias);
+}
+
+.nav-inner{
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 20px;
+    display:flex;
+    align-items:center;
+}
+
+.nav-inner a{
+    color:#ffffff;
+    font-family:'Barlow Condensed',sans-serif;
+    font-size:14px;
+    font-weight:600;
+    text-transform:uppercase;
+    padding:12px 16px;
+    display:block;
+    transition:.2s;
+}
+
+.nav-inner a:hover,
+.nav-inner a.active{
+    background:var(--botoncategoria);
+    color:#ffffff;
+}
+
+.nav-inner .all-cats{
+    background:var(--botoncategoria);
+    color:#ffffff;
+    font-weight:700;
+}
+
+
+
+
+
+
+/* COLORES Y TAMAÑOS DE LA PARTE DEL INICIO DEL BANNER Y LAS IMAGENES*/
+
+.hero-section{
+    max-width:1280px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.hero-inner{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:16px;
+}
+
+.hero-banner{
+    background-image: url('/imagenes/ChatGPT Image 12 jul 2026, 20_25_32.png');
+    background-size: cover;
+    background-position: center;
+    border-radius:6px;
+    min-height:320px;
+    display:flex;
+    align-items:flex-end;
+    padding:30px;
+}
+
+.hero-eyebrow{
+    display:block;
+    color:var(--botoncategoria);
+    font-size:13px;
+    font-weight:600;
+    text-transform:uppercase;
+    margin-bottom:6px;
+}
+
+.hero-text h2{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:800;
+    font-size:32px;
+    color:#ffffff;
+    margin-bottom:16px;
+}
+
+.hero-btn{
+    display:inline-block;
+    background:#ffffff;
+    color:var(--headercarrito);
+    padding:10px 20px;
+    border-radius:4px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.hero-side{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.hero-side-card{
+    border-radius:6px;
+    flex:1;
+    min-height:150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.side-1{
+    background-image: url('/imagenes/ChatGPT Image 12 jul 2026, 20_22_47.png');
+}
+
+.side-2{
+    background-image: url('/imagenes/ChatGPT Image 12 jul 2026, 20_25_32.png');
+}
+
+@media (max-width:860px){
+    .hero-inner{ grid-template-columns:1fr; }
+}
+
+
+
+
+
+
+/* COLORES, IMAGENES Y TAMAÑO DE LAS MARCAS*/
+.brands-section{
+    background:#f7f8fa;
+    padding:40px 0;
+}
+
+.brands-inner{
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+.brands-inner h3{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;
+    font-size:22px;
+    color:var(--headercarrito);
+    margin:6px 0 20px;
+}
+
+.brands-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:14px;
+    justify-content: center;
+}
+
+.brand-card{
+    background:#ffffff;
+    border:1px solid #E1E5EC;
+    border-radius:6px;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;
+    color:#1B2436;
+    font-size:13px;
+    text-align:center;
+    padding:8px;
+}
+
+.brand-card img{
+    max-width: 80%;
+    max-height: 45px;
+    object-fit: contain;
+}
+
+@media (max-width:860px){
+    .brands-grid{ grid-template-columns:repeat(4,1fr); }
+}
+
+
+
+
+
+
+/* COLORES TAMAÑOS DE LA PARTE DE LOS SERVICIOS*/
+.services-section{
+    background:linear-gradient(90deg,#1D4ED8,#010831);
+    padding:50px 0;
+}
+
+.services-inner{
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:1fr 1.6fr;
+    gap:40px;
+    align-items:center;
+}
+
+.services-text .section-eyebrow{
+    color:#ffffff;
+    font-weight:700;
+}
+
+.services-text h2{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:800;
+    font-size:28px;
+    color:#ffffff;
+    margin:10px 0 14px;
+}
+
+.services-text p{
+    font-size:14px;
+    color:#ffffff;
+    margin-bottom:20px;
+    line-height:1.5;
+}
+
+.services-btn{
+    display:inline-block;
+    background:#01fc01;
+    color:#ffffff;
+    padding:11px 22px;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.service-card{
+    background:#ffffff;
+    border-radius:8px;
+    padding:18px;
+}
+
+.service-icon{
+    display:block;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.service-card h4{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;
+    font-size:15px;
+    color:var(--headercarrito);
+    margin-bottom:4px;
+}
+
+.service-card p{
+    font-size:12.5px;
+    color:#6b7280;
+}
+
+@media (max-width:860px){
+    .services-inner{ grid-template-columns:1fr; }
+    .services-grid{ grid-template-columns:1fr 1fr; }
+}
+
+
+
+
+
+/* COLORES, TAMAÑOS Y DISEÑO DEL FOOTER*/
+
+.site-footer{
+    background:var(--headercarrito);
+    color:#ffffff;
+    margin-top:60px;
+}
+
+.footer-inner{
+    max-width:1280px;
+    margin:0 auto;
+    padding:40px 20px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:30px;
+}
+
+.footer-col h4{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;
+    font-size:16px;
+    text-transform:uppercase;
+    letter-spacing:.4px;
+    margin-bottom:16px;
+    color:#ffffff;
+}
+
+.footer-col p{
+    font-size:13px;
+    line-height:1.6;
+    color:#c3cbd6;
+}
+
+.footer-col ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.footer-col ul li{
+    margin-bottom:10px;
+}
+
+.footer-col ul li a{
+    font-size:13px;
+    color:#c3cbd6;
+}
+
+.footer-col ul li a:hover{
+    color:var(--botoncategoria);
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.12);
+    padding:16px 20px;
+    text-align:center;
+}
+
+.footer-bottom p{
+    font-size:12.5px;
+    color:#c3cbd6;
+}
+
+@media (max-width:860px){
+    .footer-inner{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+
+/* BOTON FLOTANTE WHATSAPP */
+
+.whatsapp-float{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,.25);
+    z-index: 9999;
+    transition: transform .3s ease;
+}
+
+.whatsapp-float:hover{
+    transform: scale(1.1);
+}
+
+.whatsapp-float i{
+    color: #fff;
+    font-size: 34px;
+}

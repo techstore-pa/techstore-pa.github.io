@@ -1,0 +1,78 @@
+/* ===== CATALOGO (todos los productos) ===== */
+.catalogo{
+    max-width:1280px;
+    margin:0 auto;
+    padding:30px 20px;
+}
+
+.catalogo h1{
+    font-family:'Barlow Condensed',sans-serif;
+    font-size:26px;
+    font-weight:700;
+    text-transform:uppercase;
+    color:var(--headercarrito);
+    margin-bottom:20px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
+}
+
+.product-card{
+    border:1px solid #ddd;
+    border-radius:4px;
+    padding:15px;
+    text-align:center;
+    background:#ffffff;
+}
+
+.product-img{
+    background:#f0f0f0;
+    height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#999;
+    margin-bottom:10px;
+    border-radius:4px;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.product-name{
+    font-size:14px;
+    color:var(--headercarrito);
+    margin-bottom:8px;
+}
+
+.product-price{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;
+    font-size:20px;
+    color:var(--headercarrito);
+    margin-bottom:10px;
+}
+
+.product-card button{
+    width:100%;
+    background:var(--headercarrito);
+    color:#ffffff;
+    border:none;
+    padding:10px;
+    border-radius:4px;
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.product-card button:hover{
+    background:var(--botoncategoria);
+}
