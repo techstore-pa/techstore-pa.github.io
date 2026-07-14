@@ -44,19 +44,12 @@ header{
 
 .logo{
     min-width:100px;
-    overflow: hidden;
-    border-radius: 4px;
 }
 
 .logo img{
     width:100px;
     height:100px;
     display:block;
-    transition: all 0.4s ease;
-}
-
-.logo:hover img{
-    transform: scale(1.1);
 }
 
 .search-bar{
@@ -233,11 +226,6 @@ nav{
     border-radius:4px;
     font-size:13px;
     font-weight:700;
-    transition: all 0.3s ease;
-}
-
-.hero-btn:hover{
-    transform: scale(1.08);
 }
 
 .hero-side{
@@ -252,12 +240,6 @@ nav{
     min-height:150px;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
-    transition: all 0.4s ease;
-}
-
-.hero-side-card:hover{
-    transform: scale(1.08);
 }
 
 .side-1{
@@ -318,18 +300,12 @@ nav{
     font-size:13px;
     text-align:center;
     padding:8px;
-    overflow: hidden;
 }
 
 .brand-card img{
     max-width: 80%;
     max-height: 45px;
     object-fit: contain;
-    transition: all 0.4s ease;
-}
-
-.brand-card:hover img{
-    transform: scale(1.2);
 }
 
 @media (max-width:860px){
@@ -385,11 +361,6 @@ nav{
     border-radius:6px;
     font-size:14px;
     font-weight:600;
-    transition: all 0.3s ease;
-}
-
-.services-btn:hover{
-    transform: scale(1.08);
 }
 
 .services-grid{
