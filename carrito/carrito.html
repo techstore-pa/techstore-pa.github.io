@@ -1,27 +1,92 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EG Computer's — Carrito</title>
+<title>Tu Carrito - TECH STORE</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="carrito.css">
 </head>
 <body>
 
-<a href="../index.html" class="back-link">← Seguir comprando</a>
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <img src="/imagenes/Blessica Bar & Resto.png" alt="TECH STORE">
+    </div>
+    <div>
+      <a href="/index.html" class="action3-btn">Inicio</a>
+    </div>
+    <div class="search-bar">
+      <select>
+        <option>Todo</option>
+        <option>Laptops y PCs</option>
+        <option>Componentes</option>
+        <option>Monitores</option>
+        <option>Perifericos</option>
+        <option>Impresión</option>
+        <option>Celulares & Tablets</option>
+        <option>Redes</option>
+      </select>
+      <input type="text" placeholder="Buscar Productos">
+    </div>
+    <div class="header-actions">
+      <a href="../usuarios/usuario.html" class="action-btn">Registrar/Ingresar</a>
+      <a href="carrito.html" class="action2-btn">Carrito</a>
+    </div>
+  </div>
+</header>
 
 <div class="wrap">
+  <a href="../todoslosproductos/catalogo.html" class="back-link">← Volver al catálogo</a>
   <h1>Tu carrito</h1>
 
   <div class="empty-cart">
     <div class="empty-icon">🛒</div>
     <p class="empty-title">Tu carrito está vacío</p>
     <p class="empty-text">Todavía no has agregado productos. Explora el catálogo y encuentra lo que necesitas.</p>
-    <a href="../index.html" class="empty-btn">Ver productos</a>
+    <a href="../todoslosproductos/catalogo.html" class="empty-btn">Ver productos</a>
   </div>
 </div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>TECH STORE</h4>
+      <p>Tu tienda de tecnología: laptops, componentes, periféricos y más, con la mejor atención y garantía.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="/todoslosproductos/catalogo.html">Todos los Productos</a></li>
+        <li><a href="/usuarios/usuario.html">Mi Cuenta</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Extra</h4>
+      <ul>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Políticas de Privacidad</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+        <li><a href="#">Centro de Ayuda</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Panamá, Panamá</li>
+        <li>📞 +507 6609-8900</li>
+        <li>✉️ contacto@techstore.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 TECH STORE. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="../carrito.js"></script>
 
 </body>
 </html>
