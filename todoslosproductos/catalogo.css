@@ -37,6 +37,7 @@
     color:#999;
     margin-bottom:10px;
     border-radius:4px;
+    overflow: hidden;
 }
 
 .product-img img {
@@ -44,7 +45,11 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
 
+.product-img:hover img {
+    transform: scale(1.12);
 }
 
 .product-name{
@@ -71,8 +76,10 @@
     font-size:13px;
     font-weight:600;
     cursor:pointer;
+    transition: transform 0.2s ease;
 }
 
 .product-card button:hover{
     background:var(--botoncategoria);
+    transform: translateY(-2px);
 }
