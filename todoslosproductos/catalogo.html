@@ -24,18 +24,18 @@
     </div>
 
     <div class="search-bar">
-      <select>
-        <option>Todo</option>
-        <option>Laptops y PCs</option>
-        <option>Componentes</option>
-        <option>Monitores</option>
-        <option>Perifericos</option>
-        <option>Impresión</option>
-        <option>Celulares & Tablets</option>
-        <option>Redes</option>
+      <select id="category-filter">
+        <option value="">Todo</option>
+        <option value="Laptops y PCs">Laptops y PCs</option>
+        <option value="Componentes">Componentes</option>
+        <option value="Monitores">Monitores</option>
+        <option value="Perifericos">Perifericos</option>
+        <option value="Impresión">Impresión</option>
+        <option value="Celulares & Tablets">Celulares & Tablets</option>
+        <option value="Redes">Redes</option>
       </select>
 
-      <input type="text" placeholder="Buscar Productos">
+      <input type="text" id="search-input" placeholder="Buscar Productos">
     </div>
 
     <div class="header-actions">
@@ -62,125 +62,130 @@
 <main class="catalogo">
   <h1>Todos los Productos</h1>
 
-  <div class="product-grid">
+  <div class="product-grid" id="product-grid">
 
-    <div class="product-card">
+    <div class="product-card" data-name="HP Victus" data-category="Laptops y PCs">
       <div class="product-img">
-        <img src="/imagenes/PS0009563_1_554x554.webp" alt="">
+        <img src="/imagenes/PS0009563_1_554x554.webp" alt="HP Victus">
       </div>
       <p class="product-name">HP Victus </p>
       <p class="product-price">$799.99</p>
       <button>Agregar al Carrito</button>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-name="HP Victus Infinity" data-category="Laptops y PCs">
       <div class="product-img">
-        <img src="/imagenes/PS0017066_3_554x554.webp" alt="">
+        <img src="/imagenes/PS0017066_3_554x554.webp" alt="HP Victus Infinity">
       </div>
       <p class="product-name">HP Victus Infinity</p>
       <p class="product-price">$999.99</p>
       <button>Agregar al Carrito</button>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-name="Lenovo ThinkBook" data-category="Laptops y PCs">
       <div class="product-img">
-        <img src="/imagenes/PS0016649_3_554x554.webp" alt="">
+        <img src="/imagenes/PS0016649_3_554x554.webp" alt="Lenovo ThinkBook">
       </div>
       <p class="product-name">Lenovo ThinkBook</p>
       <p class="product-price">$1199.99</p>
       <button>Agregar al Carrito</button>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-name="Laptop ASUS" data-category="Laptops y PCs">
       <div class="product-img">
-        <img src="/imagenes/PS0017655_7_554x554.webp" alt="">
+        <img src="/imagenes/PS0017655_7_554x554.webp" alt="Laptop ASUS">
       </div>
       <p class="product-name">Laptop ASUS</p>
       <p class="product-price">$699.99</p>
       <button>Agregar al Carrito</button>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-name="Combo Teclado y Mouse" data-category="Perifericos">
       <div class="product-img">
-        <img src="/imagenes/MIGPS0015258_1_500x500.jpg" alt="">
+        <img src="/imagenes/MIGPS0015258_1_500x500.jpg" alt="Combo Teclado y Mouse">
       </div>
       <p class="product-name">Combo Teclado y Mouse</p>
       <p class="product-price">$25.99</p>
       <button>Agregar al Carrito</button>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-name="Mouse Inalambrico" data-category="Perifericos">
       <div class="product-img">
-        <img src="/imagenes/MIGPS0015231_1_554x554.webp" alt="">
+        <img src="/imagenes/MIGPS0015231_1_554x554.webp" alt="Mouse Inalambrico">
       </div>
       <p class="product-name">Mouse Inalambrico</p>
       <p class="product-price">$6.99</p>
       <button>Agregar al Carrito</button>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-name="Impresora Epson" data-category="Impresión">
       <div class="product-img">
-        <img src="/imagenes/PS0008896_0_554x554.webp" alt="">
+        <img src="/imagenes/PS0008896_0_554x554.webp" alt="Impresora Epson">
       </div>
       <p class="product-name">Impresora Epson</p>
       <p class="product-price">$400.99</p>
       <button>Agregar al Carrito</button>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-name="All-In-One Dell Inspiron" data-category="Componentes">
       <div class="product-img">
-        <img src="/imagenes/PS0014063_0_554x554.webp" alt="">
+        <img src="/imagenes/PS0014063_0_554x554.webp" alt="All-In-One Dell Inspiron">
       </div>
       <p class="product-name">All-In-One Dell Inspiron</p>
       <p class="product-price">$1200.99</p>
       <button>Agregar al Carrito</button>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-name="Monitor Gaming 27 Pulgadas" data-category="Monitores">
       <div class="product-img">
-        <img src="/imagenes/PS0012689_2_554x554.webp" alt="">
+        <img src="/imagenes/PS0012689_2_554x554.webp" alt="Monitor Gaming 27 Pulgadas">
       </div>
       <p class="product-name">Monitor Gaming 27 Pulgadas</p>
       <p class="product-price">$105.99</p>
       <button>Agregar al Carrito</button>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-name="Teclado Gaming - Star Wars" data-category="Perifericos">
       <div class="product-img">
-        <img src="/imagenes/PS0014165_0_500x500.webp" alt="">
+        <img src="/imagenes/PS0014165_0_500x500.webp" alt="Teclado Gaming - Star Wars">
       </div>
       <p class="product-name">Teclado Gaming - Star Wars</p>
       <p class="product-price">$5.99</p>
       <button>Agregar al Carrito</button>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-name="Impresora HP" data-category="Impresión">
       <div class="product-img">
-        <img src="/imagenes/PS0006226_9_500x500.webp" alt="">
+        <img src="/imagenes/PS0006226_9_500x500.webp" alt="Impresora HP">
       </div>
       <p class="product-name">Impresora HP</p>
       <p class="product-price">$155.99</p>
       <button>Agregar al Carrito</button>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-name="Teclado Gaming - Star Wars Verde" data-category="Perifericos">
       <div class="product-img">
-        <img src="/imagenes/PS0014158_0_500x500.webp" alt="">
+        <img src="/imagenes/PS0014158_0_500x500.webp" alt="Teclado Gaming - Star Wars Verde">
       </div>
       <p class="product-name">Teclado Gaming - Star Wars Verde</p>
       <p class="product-price">$75.99</p>
       <button>Agregar al Carrito</button>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-name="Monitor Gaming Curvo 27 Pulgadas" data-category="Monitores">
       <div class="product-img">
-        <img src="/imagenes/PS0015108_0_554x554.webp" alt="">
+        <img src="/imagenes/PS0015108_0_554x554.webp" alt="Monitor Gaming Curvo 27 Pulgadas">
       </div>
       <p class="product-name">Monitor Gaming Curvo 27 Pulgadas</p>
       <p class="product-price">$159.99</p>
       <button>Agregar al Carrito</button>
     </div>
 
+  </div>
+  
+  <div id="no-results" style="display: none; text-align: center; padding: 40px;">
+    <p style="font-size: 18px; color: #1D4ED8; font-weight: 600;">😔 No se encontraron productos</p>
+    <p style="color: #666; margin-top: 10px;">Intenta con otro término de búsqueda</p>
   </div>
 </main>
 
@@ -228,6 +233,7 @@
 </footer>
 
 <script src="../carrito.js"></script>
+<script src="search.js"></script>
 
 </body>
 </html>
